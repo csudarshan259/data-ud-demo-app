@@ -25,6 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 # data-ud-demo-app
 Demo Angular 2 page application. An open directory for Job Applicants.
 
+# Steps to run the application
 1. Add Firebase web credentials to environment.ts and environment.prod.ts.
 2. Run the project by using ng serve command.
 
@@ -43,7 +44,7 @@ If you occur cors error please follow the following steps:
 4. Open command prompt and run the following command.
 5. gsutil cors set cors.json gs://<your-project-bucket-link> e.g. gs://abc-xyz.appspot.com
   
-# NOTE: While selecting pictures and files please do not use onedrive or dropbox. Use local files and pictures.
+## NOTE: While selecting pictures and files please do not use onedrive or dropbox. Use local files and pictures.
   
  # STEPS TO DEPLOY ON FIREBASE HOSTING
  1. ng build --prod
