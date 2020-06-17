@@ -46,7 +46,7 @@ If you occur cors error please follow the following steps:
   
 ## NOTE: While selecting pictures and files please do not use onedrive or dropbox. Use local files and pictures.
   
- # STEPS TO DEPLOY ON FIREBASE HOSTING
+ ## STEPS TO DEPLOY ON FIREBASE HOSTING
  1. ng build --prod
  2. npm install -g firebase-tools
  3. firebase login
@@ -54,8 +54,8 @@ If you occur cors error please follow the following steps:
  5. Select hosting option
  6. Select public directory as dist or dist/data-ud-demo-app depending on the configuration
  7. Type yes for Configure as Single Page App
- 8. Overwrite index.html type No
-For more details visit https://alligator.io/angular/deploying-angular-app-to-firebase/
+ 8. Overwrite index.html type No . 
+ For more details visit https://alligator.io/angular/deploying-angular-app-to-firebase/
 
 NOTE: The link provided is not associated/affiliated with this project by any means. One may explore the link on their own risk.
 
