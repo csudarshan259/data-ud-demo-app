@@ -1,84 +1,84 @@
 <div class="jumbotron">
     <div class="row">
-        <div class="col-5"></div>
-        <div class="col=2">
+        <div class="col-sm-5 col-md-5 col-lg-5"></div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
             <h1>Job Profile</h1>
         </div>
-        <div class="col-sm-4"></div>
-        <div class="col-1"><a class="btn btn-success" routerLink="/data-access-page">User Details</a></div>
+        <div class="col-sm-4 col-md-4 col-lg-4"></div>
+        <div class="col-sm-1 col-md-1 col-lg-1"><a class="btn btn-success" routerLink="/data-access-page">User Details</a></div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
                 <form [formGroup]="profileForm" (ngSubmit)="formSubmit()">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-row">
-                                <div class="col-sm-3"></div>
-                                    <label for="firstName" class="col-sm-1 col-form-label">First Name</label>
-                                    <input formControlName="firstName"  id="firstName" class="form-control col-sm-4" type="text"
+                                <div class="col-sm-3 col-md-3 col-lg-3"></div>
+                                    <label for="firstName" class="col-sm-1 col-md-1 col-lg-1 col-form-label">First Name</label>
+                                    <input formControlName="firstName"  id="firstName" class="form-control col-sm-4 col-md-4 col-lg-4" type="text"
                                         placeholder="Enter Your First Name">
 
-                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4 col-md-4 col-lg-4"></div>
                             </div>
                         </div>
-                        <div class="col-sm-12 ">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
                             <div class="form-row">
-                                <div class="col-sm-3"></div>
-                                <label for="lastName" class="col-sm-1 col-form-label">Last Name</label>
-                                <input id="lastName" formControlName="lastName" type="text" class="form-control col-sm-4" placeholder="Enter Your Last Name">
-                                <div class="col-sm-4"></div>
+                                <div class="col-sm-3 col-md-3 col-lg-3"></div>
+                                <label for="lastName" class="col-sm-1 col-md-1 col-lg-1 col-form-label">Last Name</label>
+                                <input id="lastName" formControlName="lastName" type="text" class="form-control col-sm-4 col-md-4 col-lg-4" placeholder="Enter Your Last Name">
+                                <div class="col-sm-4 col-md-4 col-lg-4"></div>
                             
                             </div>
 
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
                             <div class="form-row">
-                                <div class="col-sm-3"></div>
-                                <label for="email" class="col-sm-1 col-form-label">Email</label>
-                                <input id="email" type="email" formControlName="email" class="form-control col-sm-4" placeholder="Enter Email Id">
-                                <div class="col-sm-4"></div>
+                                <div class="col-sm-3 col-md-3 col-lg-3"></div>
+                                <label for="email" class="col-sm-1 col-md-1 col-lg-1 col-form-label">Email</label>
+                                <input id="email" type="email" formControlName="email" class="form-control col-sm-4 col-md-4 col-lg-4" placeholder="Enter Email Id">
+                                <div class="col-sm-4 col-md-4 col-lg-4"></div>
                             </div>
                         </div>
                        
 
-                        <div class="col-sm-12 ">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
                             <div class="form-row">
-                                <div class="col-sm-3"></div>
-                                <label for="coverLetter" class="col-sm-1 col-form-label">Cover Letter<br>(Optional)</label>
-                                <textarea id="coverLetter" formControlName="coverLetter" type="text" class="form-control col-sm-4" placeholder="Enter Few Words About Yourself"></textarea>
-                                <div class="col-sm-4"></div>
+                                <div class="col-sm-3 col-md-3 col-lg-3"></div>
+                                <label for="coverLetter" class="col-sm-1 col-md-1 col-lg-1 col-form-label">Cover Letter<br>(Optional)</label>
+                                <textarea id="coverLetter" formControlName="coverLetter" type="text" class="form-control col-sm-4 col-md-4 col-lg-4" placeholder="Enter Few Words About Yourself"></textarea>
+                                <div class="col-sm-4 col-md-4 col-lg-4"></div>
                             
                             </div>
 
                         </div>
                         
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
                             <div class="form-row">
-                                <div class="col-sm-3"></div>
-                                <label for="profilePicture" class="col-sm-1 col-form-label">Profile Picture</label>
+                                <div class="col-sm-3 col-md-3 col-lg-3"></div>
+                                <label for="profilePicture" class="col-sm-1 col-md-1 col-lg-1 col-form-label">Profile Picture</label>
                                 <input id="profilePicture" formControlName="profilePicture" type="file" (change)="fileChange($event)" accept=".jpg,.png" class="form-control col-sm-4">
-                                <div class="col-sm-4"><label for="profilePicture" *ngIf="recentImage">Recent Image: {{user[4]}}</label></div>
+                                <div class="col-sm-4 col-md-4 col-lg-4"><label for="profilePicture" *ngIf="recentImage">Recent Image: {{user[4]}}</label></div>
                             </div>
 
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
                             <div class="form-row">
                                 <div class="col-sm-3"></div>
-                                <label for="resume" class="col-sm-1 col-form-label">Resume</label>
+                                <label for="resume" class="col-sm-1 col-md-1 col-lg-1 col-form-label">Resume</label>
                                 <input id="resume" type="file" formControlName="resume" (change)="fileChange1($event)" accept=".pdf,.doc,.docx" class="form-control col-sm-4">
-                                <div class="col-sm-4"><label for="profilePicture" *ngIf="recentResumeFile">Recent file: {{user[5]}}</label></div>
+                                <div class="col-sm-4 col-md-4 col-lg-4"><label for="profilePicture" *ngIf="recentResumeFile">Recent file: {{user[5]}}</label></div>
                             </div>
 
                         </div>
 
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
                             <div class="form-row">
-                                <div class="col-sm-6"></div>
-                                <div class="col-sm-1">
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6"></div>
+                                <div class="col-sm-1 col-md-1 col-lg-1 col-xs-1">
                                     <button class="btn btn-primary" [disabled]="" (click)="resetForm()">Cancel</button>
                                 </div>
-                                <div class="col-sm-5">
+                                <div class="col-sm-5 col-md-5 col-lg-5 col-xs-5">
                                     <button class="btn btn-primary" [disabled]="profileForm.invalid || allInputsDisabled" >Submit</button>
                                 </div>
                             </div>

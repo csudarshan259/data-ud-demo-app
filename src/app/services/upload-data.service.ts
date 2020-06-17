@@ -42,7 +42,7 @@ export class UploadDataService {
 
 
       const profilePictureName = profilePicture.name;
-      //console.log(profilePictureName);
+      // console.log(profilePictureName);
       const localpath = 'images/' + path + '-' + profilePictureName;
       //  console.log(localpath);
       const ref = this.storage.ref(localpath);
@@ -51,7 +51,7 @@ export class UploadDataService {
       task.then(result => {
         console.log(result);
         this.imageupload = true;
-        this.eventCallback.next(this.imageupload+'');
+        this.eventCallback.next(this.imageupload + '');
       });
       task.catch(err => {
         console.log('Image error', err);
@@ -69,7 +69,7 @@ export class UploadDataService {
       task1.then(result => {
         console.log(result);
         this.fileupload = true;
-        this.eventCallback.next(this.fileupload+'');
+        this.eventCallback.next(this.fileupload + '');
       });
       task1.catch(error => {
         console.log('resume error', error);

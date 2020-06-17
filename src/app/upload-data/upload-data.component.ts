@@ -82,7 +82,7 @@ export class UploadDataComponent implements OnInit {
 
       }
 
-    })
+    });
   }
 
 

@@ -3,12 +3,13 @@ import { Observable } from 'rxjs';
 import { AngularFireDatabase } from '@angular/fire/database';
 import * as sha512 from 'js-sha512';
 import { AngularFireStorage } from '@angular/fire/storage';
-import { url } from 'inspector';
+
 @Component({
   selector: 'app-access-data',
   templateUrl: './access-data.component.html',
   styleUrls: ['./access-data.component.css']
 })
+
 export class AccessDataComponent implements OnInit {
   users: any;
   data1: any;
