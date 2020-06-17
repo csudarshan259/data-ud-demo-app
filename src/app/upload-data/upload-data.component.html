@@ -4,7 +4,8 @@
         <div class="col=2">
             <h1>Job Profile</h1>
         </div>
-        <div class="col-5"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-1"><a class="btn btn-success" routerLink="/data-access-page">User Details</a></div>
     </div>
     <div class="container">
         <div class="row">
@@ -35,16 +36,29 @@
                             <div class="form-row">
                                 <div class="col-sm-3"></div>
                                 <label for="email" class="col-sm-1 col-form-label">Email</label>
-                                <input id="email" type="email" formControlName="email" class="form-control col-sm-4" placeholder="Enter Your Email Id">
+                                <input id="email" type="email" formControlName="email" class="form-control col-sm-4" placeholder="Enter Email Id">
                                 <div class="col-sm-4"></div>
                             </div>
                         </div>
+                       
+
+                        <div class="col-sm-12 ">
+                            <div class="form-row">
+                                <div class="col-sm-3"></div>
+                                <label for="coverLetter" class="col-sm-1 col-form-label">Cover Letter<br>(Optional)</label>
+                                <textarea id="coverLetter" formControlName="coverLetter" type="text" class="form-control col-sm-4" placeholder="Enter Few Words About Yourself"></textarea>
+                                <div class="col-sm-4"></div>
+                            
+                            </div>
+
+                        </div>
+                        
                         <div class="col-sm-12">
                             <div class="form-row">
                                 <div class="col-sm-3"></div>
                                 <label for="profilePicture" class="col-sm-1 col-form-label">Profile Picture</label>
                                 <input id="profilePicture" formControlName="profilePicture" type="file" (change)="fileChange($event)" accept=".jpg,.png" class="form-control col-sm-4">
-                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4"><label for="profilePicture" *ngIf="recentImage">Recent Image: {{user[4]}}</label></div>
                             </div>
 
                         </div>
@@ -53,16 +67,19 @@
                                 <div class="col-sm-3"></div>
                                 <label for="resume" class="col-sm-1 col-form-label">Resume</label>
                                 <input id="resume" type="file" formControlName="resume" (change)="fileChange1($event)" accept=".pdf,.doc,.docx" class="form-control col-sm-4">
-                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4"><label for="profilePicture" *ngIf="recentResumeFile">Recent file: {{user[5]}}</label></div>
                             </div>
 
                         </div>
 
                         <div class="col-sm-12">
                             <div class="form-row">
-                                <div class="col-sm-7"></div>
+                                <div class="col-sm-6"></div>
+                                <div class="col-sm-1">
+                                    <button class="btn btn-primary" [disabled]="" (click)="resetForm()">Cancel</button>
+                                </div>
                                 <div class="col-sm-5">
-                                    <button class="btn btn-primary" [disabled]="profileForm.invalid" >Submit</button>
+                                    <button class="btn btn-primary" [disabled]="profileForm.invalid || allInputsDisabled" >Submit</button>
                                 </div>
                             </div>
 

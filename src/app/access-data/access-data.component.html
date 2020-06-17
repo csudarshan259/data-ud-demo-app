@@ -1,0 +1,42 @@
+<!-- <p>access-data works!</p> -->
+<!-- <h2>{{users |json}}</h2> -->
+<div class="jumbotron">
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th><a class="btn btn-success" routerLink='/upload-page'>Home</a></th>
+                    <th scope="col">#</th>
+                    <th scope="col">Firstname</th>
+                    <th scope="col">Lastname</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Cover Letter</th>
+                    <th scope="col">Profile Picture</th>
+                    <th scope="col">Resume</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users; let i=index;">
+
+                    <th scope="row"></th>
+                    <td>{{i+1}}</td>
+
+                    <td>{{user.firstName}}</td>
+                    <td>{{user.lastName}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.coverLetter}}</td>
+                    <td><a href="{{user.profilePicture}}" target="_blank" rel="noopener noreferrer">Download </a></td>
+                    <td><a href="{{user.resume}}" target="_blank" rel="noopener noreferrer">Download</a></td>
+                    <td><a class="btn btn-primary" [routerLink]="['/upload-page', user.email]"
+                            routerLinkActive="active">Edit</a></td>
+                    <td><button class="btn btn-primary"
+                            (click)="confirmDelete(user.email,user.profilePicture,user.resume)">Delete</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>

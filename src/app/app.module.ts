@@ -11,10 +11,12 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 import { environment } from 'src/environments/environment';
 import { Md5 } from 'ts-md5';
+import { AccessDataComponent } from './access-data/access-data.component';
 @NgModule({
   declarations: [
     AppComponent,
-    UploadDataComponent
+    UploadDataComponent,
+    AccessDataComponent
   ],
   imports: [
     BrowserModule,
