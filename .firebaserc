@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "data-ud-demo": {
+      "hosting": {
+        "data-ud-demo-app": [
+          "data-ud-demo"
+        ]
+      }
+    }
+  }
+}
