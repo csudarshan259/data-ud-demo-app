@@ -89,6 +89,9 @@ export class UploadDataComponent implements OnInit {
 
 
   profilePictureValidation(pic) {
+    if (pic == null) {
+      return;
+    }
     const parts = pic.split('.');
     let extension = '';
     extension = parts[parts.length - 1];
